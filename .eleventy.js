@@ -22,6 +22,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPlugin(embeds);
 
   // Image optimization shortcode
