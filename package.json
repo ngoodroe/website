@@ -1,0 +1,16 @@
+{
+  "name": "personal-website-minimal",
+  "version": "1.0.0",
+  "description": "Minimal personal website - Better Motherfucking Website style",
+  "scripts": {
+    "start": "eleventy --serve --port=8080",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
+    "eleventy-plugin-embed-everything": "^1.21.1"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "projects": [
+    { "title": "Bookshelf Game", "url": "https://bookshelf.nathangoodroe.com" }
+  ],
+  "videos": [],
+  "comics": [
+    { "title": "Sir Damon's Armor", "url": "https://comic.nathangoodroe.com" },
+    {
+      "title": "Hometown Hero",
+      "pub": "The Offing",
+      "url": "https://theoffingmag.com/comics/hometown-hero/"
+    },
+    {
+      "title": "Talking To Trees",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/hadposts/talking-to-trees"
+    },
+    {
+      "title": "Checking Out",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/hadposts/checking-out"
+    },
+    {
+      "title": "Player Introductions",
+      "pub": "Daily Drunk Magazine",
+      "url": null
+    },
+    {
+      "title": "Exaltation for a Slam Dunk",
+      "pub": "Words and Sports Quarterly",
+      "url": null
+    },
+    { "title": "Duck Supremacy", "pub": "Bullshit Lit Anthology", "url": null }
+  ],
+  "fiction": [
+    {
+      "title": "Nature's Claim",
+      "pub": "Ulysses Competition (Finalist)",
+      "url": null
+    },
+    { "title": "Fiction", "pub": "Hobart", "url": null },
+    { "title": "Fiction", "pub": "Saturday Evening Post", "url": null },
+    { "title": "Fiction", "pub": "Switchback Journal", "url": null },
+    { "title": "Fiction", "pub": "Liar's League NYC", "url": null }
+  ],
+  "humor": [
+    {
+      "title": "On Cold Brew Coffee Culture",
+      "pub": "McSweeney's",
+      "url": "https://www.mcsweeneys.net/"
+    },
+    {
+      "title": "On Stock Market Knowledge",
+      "pub": "Points In Case",
+      "url": "https://www.pointsincase.com/"
+    }
+  ]
+}

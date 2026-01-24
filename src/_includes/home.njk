@@ -1,0 +1,77 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<h1>{{ site.author.name }}</h1>
+
+<h3>Writer & illustrator from Atlanta, Georgia.</h3>
+
+{% if content | trim %}
+{{ content | safe }}
+<hr>
+{% endif %}
+
+<h2>Projects</h2>
+<ul>
+  {%- for item in links.projects %}
+    <li>{% if item.url %}
+    <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.url }})
+    {% else %}{{ item.title }}{% endif %}</li>
+  {%- endfor %}
+</ul>
+
+{% if links.videos | length %}
+<h2>Videos</h2>
+<ul>
+{%- for item in links.videos %}
+  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>
+  {% else %}
+  {{ item.title }}
+  {% endif %}
+  {% if item.description %}
+   &mdash; {{ item.description }}
+   {% endif %}
+   </li>
+{%- endfor %}
+</ul>
+{% endif %}
+
+<h2>Comics</h2>
+<ul>
+{%- for item in links.comics %}
+  <li>{% if item.url %}
+  <a href="{{ item.url }}">{{ item.title }}</a>
+  {% else %}
+  {{ item.title }}
+  {% endif %}
+  {% if item.pub %}
+  ({{ item.pub }})
+  {% endif %}
+  </li>
+{%- endfor %}
+</ul>
+
+<h2>Fiction</h2>
+<ul>
+{%- for item in links.fiction %}
+  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %} ({{ item.pub }})</li>
+{%- endfor %}
+</ul>
+
+<h2>Humor</h2>
+<ul>
+{%- for item in links.humor %}
+  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %} ({{ item.pub }})</li>
+{%- endfor %}
+</ul>
+
+<hr>
+
+<h2>Recent Posts</h2>
+<ul>
+{%- for post in collections.blog | head(5) %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> </li>
+{%- else %}
+  <li>No posts yet.</li>
+{%- endfor %}
+</ul>
+{% endblock %}

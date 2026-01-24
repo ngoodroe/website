@@ -1,0 +1,5 @@
+---
+title: index thing
+---
+
+# {{ title }}
