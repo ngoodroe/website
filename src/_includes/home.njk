@@ -10,66 +10,33 @@
 <hr>
 {% endif %}
 
-<h2>Projects</h2>
+{%- for categoryName, items in links %}
+{%- if items | length and items[0].title %}
+<h2>{{ categoryName }}</h2>
 <ul>
-  {%- for item in links.projects %}
-    <li>{% if item.url %}
-    <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.url }})
-    {% else %}{{ item.title }}{% endif %}</li>
+  {%- for item in items %}
+  {%- if item.title %}
+  <li>
+    {%- if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+    {%- if item.pub %} &mdash; {{ item.pub }}{% endif %}
+    {%- if item.description %}<br>{{ item.description }}{% endif %}
+  </li>
+  {%- endif %}
   {%- endfor %}
 </ul>
-
-{% if links.videos | length %}
-<h2>Videos</h2>
-<ul>
-{%- for item in links.videos %}
-  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>
-  {% else %}
-  {{ item.title }}
-  {% endif %}
-  {% if item.description %}
-   &mdash; {{ item.description }}
-   {% endif %}
-   </li>
+{%- endif %}
 {%- endfor %}
-</ul>
-{% endif %}
-
-<h2>Comics</h2>
-<ul>
-{%- for item in links.comics %}
-  <li>{% if item.url %}
-  <a href="{{ item.url }}">{{ item.title }}</a>
-  {% else %}
-  {{ item.title }}
-  {% endif %}
-  {% if item.pub %}
-  ({{ item.pub }})
-  {% endif %}
-  </li>
-{%- endfor %}
-</ul>
-
-<h2>Fiction</h2>
-<ul>
-{%- for item in links.fiction %}
-  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %} ({{ item.pub }})</li>
-{%- endfor %}
-</ul>
-
-<h2>Humor</h2>
-<ul>
-{%- for item in links.humor %}
-  <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %} ({{ item.pub }})</li>
-{%- endfor %}
-</ul>
 
 <hr>
 
 <h2>Recent Posts</h2>
 <ul>
 {%- for post in collections.blog | head(5) %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a> </li>
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a>
+  {%- if post.data.description %}
+  — {{ post.data.description }}
+  {%- endif %}
+  </li>
 {%- else %}
   <li>No posts yet.</li>
 {%- endfor %}

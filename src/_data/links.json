@@ -1,10 +1,55 @@
 {
-  "projects": [
-    { "title": "Bookshelf Game", "url": "https://bookshelf.nathangoodroe.com" }
+  "Projects": [
+    {
+      "title": "Bookshelf Game",
+      "url": "https://bookshelf.nathangoodroe.com",
+      "description": "A little idle game that I wrote to satsify the feeling of organizing my bookshelf and games that don't require a lot of thinking."
+    }
   ],
-  "videos": [],
-  "comics": [
-    { "title": "Sir Damon's Armor", "url": "https://comic.nathangoodroe.com" },
+  "Literary Bible": [
+    {
+      "title": "Junia, the Female Apostle",
+      "url": "https://youtu.be/g-pwOPyA3OU?si=VUtgwKBeC006fTWp",
+      "description": ""
+    },
+    {
+      "title": "Jesus Heals the Paralyzed Man",
+      "url": "https://youtu.be/fH2xeh47B-Q?si=25OGm878itcp4lZJ",
+      "description": ""
+    },
+    {
+      "title": "Water Into Wine",
+      "url": "https://youtu.be/OoB0utP0aFI?si=6k30c6a4i5tz5nh_",
+      "description": ""
+    },
+    {
+      "title": "Parable of the Talents",
+      "url": "https://youtu.be/jgiy7UgrOrU?si=do56Q2fgDbkU6QhT",
+      "description": ""
+    }
+  ],
+  "Videos": [
+    {
+      "title": "How to Make Caesar Dressing",
+      "url": "https://youtu.be/cD9EHxrfv1o?si=4l1fiLjCIDAelZsk"
+    },
+    {
+      "title": "The Story of the name 'Linda'",
+      "url": "https://youtu.be/tGr4HzKR_co?si=-jomqwI2Zfegfqqx",
+      "description": "I think Linda is the most interesting name in American history and I walk you through how it soared to become one of the most commons names of all time to almost lost to time forever."
+    },
+    {
+      "title": "ReImagining Journey into Imagination with Figment",
+      "url": "https://youtu.be/xHGTAxGOKuc?si=GpToIjlp9bJucnR9",
+      "description": "I spent like a year working on designing a new Journey Into Imagination ride at EPCOT and put it all together with a 3D ridethrough."
+    }
+  ],
+  "Comics": [
+    {
+      "title": "Sir Damon's Armor",
+      "url": "https://comic.nathangoodroe.com",
+      "description": "I turned my previously published short story into a 20 page comic."
+    },
     {
       "title": "Hometown Hero",
       "pub": "The Offing",
@@ -23,36 +68,97 @@
     {
       "title": "Player Introductions",
       "pub": "Daily Drunk Magazine",
-      "url": null
+      "url": "https://dailydrunkmag.com/2022/02/11/player-introductions/"
     },
     {
       "title": "Exaltation for a Slam Dunk",
       "pub": "Words and Sports Quarterly",
-      "url": null
+      "url": "https://www.wasquarterly.com/words/exaltation-for-a-slam-dunk"
     },
-    { "title": "Duck Supremacy", "pub": "Bullshit Lit Anthology", "url": null }
+    {
+      "title": "Duck Supremacy",
+      "pub": "Bullshit Lit Anthology (no longer in print, it appears)",
+      "url": "https://www.bullshitlit.com/anthos"
+    },
+    {
+      "title": "My Favorite Pen: Skilcraft Ballpoint Pen",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/web_features/my-favorite-pen-skilcraft-ballpoint"
+    },
+    {
+      "title": "My Favorite Pen: Sharpie",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/web_features/my-favorite-pen-sharpie"
+    }
   ],
-  "fiction": [
+  "Short Fiction": [
+    {
+      "title": "Sir Damon's Armor",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/hadposts/sir-damon-s-armor"
+    },
+    {
+      "title": "Can't Take Everything",
+      "pub": "Roi Fainéant Press",
+      "url": "https://roifaineantarchive.wixsite.com/rf-arc-hive/post/can-t-take-everything-by-nathan-goodroe"
+    },
+    {
+      "title": "Pageant",
+      "pub": "",
+      "url": "https://www.havehashad.com/web_features/pageant"
+    },
     {
       "title": "Nature's Claim",
       "pub": "Ulysses Competition (Finalist)",
-      "url": null
+      "url": "https://blog.ulysses.app/the-final-act/#nature-s-claim"
     },
-    { "title": "Fiction", "pub": "Hobart", "url": null },
-    { "title": "Fiction", "pub": "Saturday Evening Post", "url": null },
-    { "title": "Fiction", "pub": "Switchback Journal", "url": null },
-    { "title": "Fiction", "pub": "Liar's League NYC", "url": null }
+    {
+      "title": "The Day the Earth Smiled",
+      "pub": "Saturday Evening Post",
+      "url": "https://www.saturdayeveningpost.com/2019/06/the-day-the-earth-smiled/"
+    },
+    {
+      "title": "A Million",
+      "pub": "Switchback Journal (no longer in print, it appears)"
+    },
+    {
+      "title": "Everything is Kindling",
+      "pub": "Liar's League NYC",
+      "url": "https://www.liarsleaguenyc.com/everything-is-kindling-by-nathan-goodroe/"
+    },
+    {
+      "title": "The Reed House",
+      "pub": "Borfski Press",
+      "url": "https://www.lulu.com/shop/the-borfski-press/issue-iv/ebook/product-23848753.html?page=1&pageSize=4"
+    },
+    {
+      "title": "A Little After 8:30",
+      "pub": "50-Word Stories",
+      "url": "https://fiftywordstories.com/?s=goodroe"
+    }
   ],
-  "humor": [
+  "Illustration": [
     {
-      "title": "On Cold Brew Coffee Culture",
-      "pub": "McSweeney's",
-      "url": "https://www.mcsweeneys.net/"
+      "title": "Daredevils",
+      "pub": "Flash Frog",
+      "url": "https://flash-frog.com/2022/05/30/daredevils-by-mick-bennett/"
     },
     {
-      "title": "On Stock Market Knowledge",
-      "pub": "Points In Case",
-      "url": "https://www.pointsincase.com/"
+      "title": "'Kid Glove' & 'Baseball Dust'",
+      "pub": "HAD",
+      "url": "https://www.havehashad.com/web_features/2-poems-9b68527a-af70-4090-a563-dda50643137c"
+    }
+  ],
+  "Humor": [
+    {
+      "title": "Do You Have a Moment to Talk about Our Lord And Savior, Cold Brew Coffee",
+      "pub": "McSweeney's Internet Tendency",
+      "url": "https://www.mcsweeneys.net/articles/do-you-have-a-moment-to-talk-about-our-lord-and-savior-cold-brew-coffee"
+    },
+    {
+      "title": "Everything You Need to Know about Stocks for 2021",
+      "pub": "PointsInCase",
+      "url": "https://www.pointsincase.com/articles/everything-you-need-to-know-about-stocks-for-2021"
     }
   ]
 }

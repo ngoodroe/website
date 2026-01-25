@@ -1,7 +1,7 @@
 {
   "name": "personal-website-minimal",
   "version": "1.0.0",
-  "description": "Minimal personal website - Better Motherfucking Website style",
+  "description": "Minimal personal website - Better MFing Website style",
   "scripts": {
     "start": "eleventy --serve --port=8080",
     "build": "eleventy"
