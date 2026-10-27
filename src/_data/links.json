@@ -1,16 +1,36 @@
 {
   "Projects": [
     {
+      "title": "@Test",
+      "url": "attestmaker.com",
+      "description": "A formating tool for teachers to make beautiful tests with simple commands."
+    },
+    {
       "title": "Bookshelf Game",
       "url": "https://bookshelf.nathangoodroe.com",
       "description": "A little idle game that I wrote to satsify the feeling of organizing my bookshelf and games that don't require a lot of thinking."
+    },
+    {
+      "title": "3D Printed Storyboard Template",
+      "url": "things/storyboard-template/",
+      "description": "I wanted something to easy and quickly make a storyboard drawing and so I made this in TinkerCAD."
+    },
+    {
+      "title": "The Math of Disney Pin Trading",
+      "url": "https://themeparks.nathangoodroe.com/pinmath/",
+      "description": "My mathematical model of completing a Disney pin mystery set. You can also play the little game and try to collect them all [here](https://themeparks.nathangoodroe.com/pin-trading)."
+    },
+    {
+      "title": "Minecart Data",
+      "url": "https://www.minecartdata.com",
+      "description": "Im building a data pipeline tool that right now is directed toward Blackbaud's Raisers Edge."
     }
   ],
   "Literary Bible": [
     {
       "title": "Junia, the Female Apostle",
       "url": "https://youtu.be/g-pwOPyA3OU?si=VUtgwKBeC006fTWp",
-      "description": ""
+      "description": "A quick explanation of a woman in the book of Romans who scholars agreed was an apostle for 1200 years and then have suddenly changed their minds for the sake of gender ideology."
     },
     {
       "title": "Jesus Heals the Paralyzed Man",
@@ -29,6 +49,16 @@
     }
   ],
   "Videos": [
+    {
+      "title": "Deep Dive into Disney Pin Trading",
+      "url": "https://www.youtube.com/watch?v=lPblAa-WFb8&t=1s",
+      "description": "I hit the road for the largest gathering of Disney Pin traders and $100 and try to leave with Muppets Pins."
+    },
+    {
+      "title": "Building my watercolor sketchbook",
+      "url": "https://youtu.be/V97REji5G0g?si=aS665uIOF8EiMYnf",
+      "description": "Turn a sketchpad that I like into a book with me. Coptic stitching it together with needle and thread."
+    },
     {
       "title": "How to Make Caesar Dressing",
       "url": "https://youtu.be/cD9EHxrfv1o?si=4l1fiLjCIDAelZsk"

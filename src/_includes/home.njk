@@ -19,7 +19,8 @@
   <li>
     {%- if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
     {%- if item.pub %} &mdash; {{ item.pub }}{% endif %}
-    {%- if item.description %}<br>{{ item.description }}{% endif %}
+    {%- if item.image %} <div class="thumb">{% image item.image.address, item.image.alt %}</div> {% endif %}
+    {%- if item.description %}<br>{{ item.description | markdown | safe }}{% endif %}
   </li>
   {%- endif %}
   {%- endfor %}

@@ -1,5 +1,7 @@
 const Image = require("@11ty/eleventy-img");
 const embeds = require("eleventy-plugin-embed-everything");
+const markdownIt = require("markdown-it");
+const md = markdownIt();
 // Shortcode for optimized images
 async function imageShortcode(src, alt, sizes = "100vw") {
   let metadata = await Image(src, {
@@ -22,6 +24,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/files");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPlugin(embeds);
 
@@ -38,6 +41,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isoDate", (date) => {
     return new Date(date).toISOString();
+  });
+
+  // Turns Markdown text (like [links](url)) into HTML, for use in templates
+  eleventyConfig.addFilter("markdown", (text) => {
+    return md.renderInline(text);
   });
 
   eleventyConfig.addFilter("head", (array, n) => {

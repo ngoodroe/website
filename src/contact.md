@@ -8,4 +8,4 @@ layout: base.njk
 
 ### {{ description }}
 
-n goodroe at gmail com
+<!-- n goodroe at gmail com -->
