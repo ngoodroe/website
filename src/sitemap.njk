@@ -14,6 +14,23 @@ eleventyExcludeFromCollections: true
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>{{ site.url }}/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {%- for thing in collections.things %}
+  <url>
+    <loc>{{ site.url }}{{ thing.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {%- endfor %}
   {%- for post in collections.blog %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
